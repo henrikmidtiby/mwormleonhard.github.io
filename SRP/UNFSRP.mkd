@@ -1,0 +1,75 @@
+UNF-SRP: En samling forslag til inspiration
+=======
+
+##Introduktion
+Lidt om hvorfor og hvordan og sådan...
+
+##Kemi
+###Kaffekemi
+####Idegrundlag
+Undersøg forskellige måder at brygge kaffe på, og deres effekt på koffeinindholdet i den færdige drik. Sammenlign fx filterkaffe med espresso og kaffe lavet på stempelkande. Undersøg effekten af vandtemperatur, kontakttid og kaffens formalingsgrad/kornstørrelse på  styrken af det færdige produkt. Suppleer evt med smagsindtryk.
+####Mulige teknologier og teknikker
+Ekstraktion, Spektrofotometri, Gaschromatografi
+####Fagforslag
+Matematik: Modellering af ekstraktionseffektivitet som funktion af øvrige parametre.
+
+Fysik: Diffussionsprocessers betydning og temperaturafhængighed
+####Applikationer / perspektivering
+Projektet kan illustrere forskellen på batchprocesser (stempelkaffe) og flowprocesser (filterkaffe) - begge er principper der bruges i den kemiske industri og har hver deres styrker og svagheder.
+
+------------
+###Bestemmelse af farvestoffer i blanding
+####Idegrundlag
+Med spektrofotometri kan man bestemme koncentrationen af farvede stoffer i en opløsning, ved at måle absorbansen ved en given bølgelængde.
+Hvis man har en blanding af flere stoffer besværliggøres opgaven imidlertid af at det kan være svært eller umuligt at finde en bølgelængde hvor man kun måler ét af stofferne ad gangen. I stedet kan man måle ved lige så mange bølgelængder som man har farvede stoffer og ved hjælp af kalibreringskurver for hvert stof ved hver bølgelængde løse et sæt af n ligninger med n ubekendte, hvor n er antallet af stoffer / bølgelængder. På denne måde kan man fx bestemme indholdet af henholdsvis blå og gul farve i grøn sodavand.
+####Teknologier
+Spektrofotometri
+####Fagforslag
+Matematik: Matricer / lineær algebra
+
+Fysik: lys/optik/farver, additiv og subtraktiv farveblanding
+####Applikationer / perspektivering
+Projektet demonstrerer princippet bag multivariat lineær kalibrering - et princip der bruges i mange måletekniske applikationer, hvor man eksempelvis vil overvåge en proces der foregår i en opløsning der indeholder mange forskellige stoffer.
+
+------------
+###Chemoluminescens og reaktionskinetik
+####Idegrundlag
+Mål lysintensiteten af et knæklys som funktion af tid, og bestem reaktionsordenen for den lysgivende reaktion. Supplere eventuel med forskellige farver af knæklys og/eller mål ved forskellige temperaturer. Lysintensitetsmålere findes i mobiltelefoner, hvis man ikke har adgang til en "rigtig" måleopstilling. Man kan også tage billeder af knæklyset og måle lysintensiteten på det resulterende billede.
+####Teknologier
+lysmåling, digitalfoto, mobiltelefonsensor
+####Fagforslag
+Fysik: Energifrigørelse og -overførsel mellem atomer og molekyler - nogle reaktioner udvikler varme, andre lys - hvorfor?
+
+Matematik: Modellering af reaktionen, optimering af lysintensitet i forhold til hvor lang tids lys der ønskes. Eksempelvis signal-/ orienteringslys i forhold til oplysning af område. Skal det bruges i kolde eller varme områder?
+####Applikationer / perspektivering
+At forstå og kunne modellere en reaktions forløb som funktion af fx temperatur eret centralt tema i mange fremstillingsprocesser, hvor man fx skal finde et parametersæt der giver maksimalt udbytte af en reaktion, uden man rammer nogle betingelser der ødelægger reaktionen.
+
+------------
+###Blegning af farvestoffer
+####Idegrundlag
+Observer affarvningen af et farvestof med hypochlorit i basisk opløsning. Ekempelvis reaktionen mellem Brilliant Blue (blå frugtfarve) og almindelig klorin. Mål reaktionen spektrofotometrisk eller ved at variere startbetingelserne og måle tiden til fuldstændig affarvning.
+####Teknologier
+Spektrofotometri
+####Fagforslag
+####Applikationer / perspektivering
+
+------------
+
+
+###Løsøre  
+* Nedbrydning af Acetylsalicylsyre
+* Perflourforbindelser fra pizzabakker? Aborsbtion, effekt, elimination  
+* Chilistyrke og Scoville organoleptisk versus HPLC - kan evt laves med forskellige sødemidler i stedet?.  
+* GC: Brandefterfoskning. Alkohol i blod.  
+* Spildevandsrensning: Adsorbtion til aktivt kul - Fitning af isotermer (Langmuir vs BET eller?)  
+* 
+##Fysik
+* Radondøtre fra tumblerfnuller - halveringstid. Fit af flere samtidige processer?  
+* Tivolifysik!  
+  
+##Matematik  
+* Differentialligninger: Predator-prey  
+  
+##Teknologi
+* Byg selv dit måleapparat! Fluorescens, mobilspektrofotometri,
+arduino, temperatur, etc etc...
