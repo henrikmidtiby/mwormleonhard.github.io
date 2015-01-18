@@ -53,23 +53,143 @@ Spektrofotometri
 ####Fagforslag
 ####Applikationer / perspektivering
 
-------------
-
-
-###Løsøre  
+-----------
+###Oneliners
 * Nedbrydning af Acetylsalicylsyre
 * Perflourforbindelser fra pizzabakker? Aborsbtion, effekt, elimination  
 * Chilistyrke og Scoville organoleptisk versus HPLC - kan evt laves med forskellige sødemidler i stedet?.  
 * GC: Brandefterfoskning. Alkohol i blod.  
 * Spildevandsrensning: Adsorbtion til aktivt kul - Fitning af isotermer (Langmuir vs BET eller?)  
-* 
+
+
+------------
+##Matematik
+###Predator-prey-modeller
+####Idegrundlag
+Lotka-Volterra lignignerne, typisk omtalt som predator / prey, er et sæt af 2 differentialligninger hvor man antager at der der præcis to dyr, hvis population afhænger af hinanden. Den ene type er byttedyr (prey) og den anden er rovdyr (predator). Et eksempel kunne være kaniner (prey) og ræve (predator).
+Opgaven kunne nu være at finde et sæt parametre der beskriver en udviklingen i en given population og bruge dem til at forudsige den fremtidige udvikling i bestanden. 
+Alternativt kan man forsøge at "forstyrre" modellen for at illustrere eksempelvis jagt på byttedyret, og se hvordan det påvirker bestanden af rovdyr.
+Kan man koble flere systemer sammen for at få en mere virkelighedsnær model? Hvilke komplikationer har det?
+Hvad sker der med numeriske modeller af virkelige systemer nær ekstremværdier? (Attoræv-problemet: Man kan ikke have under 1 (levende) dyr i virkeligheden, men i en model kan bestanden godt regenerere fra meget små brøkdele)
+####Teknologier
+Numerisk modellering, differentialligninger
+####Fagforslag
+Biologi: Sammenligning med og modellering af virkelige data.
+####Applikationer / perspektivering
+
+-----------
+###Linær regression
+####Idegrundlag
+Linær regression benyttes enormt mange steder og det er relativt
+enkelt at udlede formlerne selv for at fitte en ret linje til et et
+sæt af målepunkter.
+For at kunne få succes med projektet skal man kunne differentiere
+simple udtryk (1, x og x^2), ikke være bange for parenteser og kunne
+løse to ligninger med to ubekendte.
+Desuden er det oplagt at arbejde med summationstegn for at forsimple udtryk.
+Outline: opstil et udtryk for den kvadrerede fejl, bestem de partielt
+afledte, sæt dem til nul og løs.
+####Teknologier
+####Fagforslag
+Linær regression anvendes i praksis i alle eksperimentelle fag til eksempelvis kalibreringsfunktioner. Hvilken betydning har de matematiske antagelser og usikkerheder for resultaterne?
+####Applikationer / perspektivering
+
+
+------------
+###Komplekse tal
+####Idegrundlag
+Det virker umiddelbart kontraintuitivt at naturlige, virkelige processer ikke altid kan beksrives eller modelleres tilfredsstillende alene med brug af relle tal. Nogle gange er man nødt til at anvende komplekse tal for at kunne lave en dækkende model.
+Anvendelser af komplekse tal er bl.a. at eftervise / udlede
+forskellige trigonometriske identiteter såsom sin(x)^2 = 1/2 - 1/2
+cos(2x) ved brug af normale regneregler.
+Outline: Undersøg et system eller opstil en ligning der ikke kan løses med de reelle tal og
+find så en løsning der involverer \sqrt(-1). Se derefter på egenskaber af \sqrt(-1).
+####Teknologier
+####Fagforslag
+####Applikationer / perspektivering
+
+-----------
 ##Fysik
-* Radondøtre fra tumblerfnuller - halveringstid. Fit af flere samtidige processer?  
-* Tivolifysik!  
-  
-##Matematik  
-* Differentialligninger: Predator-prey  
-  
+###Dødstidspunktbestemmelse
+####Idegrundlag
+Når man skal bestemme hvor længe en person har været død har man flere forskellige værktøjer til rådighed. Et af disse er kropstemperaturen, da afkølingen af et lig er mulig at modellere ud fra kendskabet til ligets temperatur og påklædning, samt omgivelsernes temperatur og forhold. 
+Lav et modelsystem, evt skaleret ned (en balje vand, en flæskesteg eller lign.) og lav en model for afkølingen. Undersøg betydningen af "ligets" vægt, omgivelsernes temperatur og "påklædningen", og sammenlign med modellen udviklet af C. Henssge og B. Madea.
+(Forensic Science International 144 (2004) 167--175 http://dx.doi.org/10.1016/j.forsciint.2004.04.051) 
+####Teknologier
+Varmelære, Differentialligninger, Numeriske metoder
+####Fagforslag
+Biologi: Kombiner information med andre postmortelle forandringer for at forbedre estimatet.
+Matamatik: Kombiner med numeriske metoder, differentialligninger.
+####Applikationer / perspektivering
+Metoden anvendes i praksis til at estimere dødstidspunkter. For at undgå at skulle løse differentialligninger på gerningsstedet udviklede Henssge og Madea et nomogram - et grafisk hjælpemiddel der kun kræver en blyant og en lineal. Kan du forklare hvordan det virker?
+
+--------------
+###Tivolifysik
+####Idegrundlag
+En moderne mobiltelefon indeholder en stor mængde sensorer, herunder et accelerometer. Optag data fra forskellige tivoliforlystelser og modellér / redegør for den påvirkning kroppen udsættes for. Flere steder får man en fornemmelse af vægtløshed. Er dette reet tilfældet?
+Kan man vise periodiciteten i eksempelvis karuseller/"tekopper" og andre roterende forlystelser? Hvilken retning påvirkes kroppen kraftigst i? Er der forskel på den subjektive oplevelse af acceleration i forskellige retninger?
+####Teknologier
+Mobiltelefon som sensor/dataopsamlingsenhed
+####Fagforslag
+Biologi: Teori om kroppens respons på påvirkningerne. Kan man måle puls/blodtryk/sved (galvanisk respons) eller andet samtidig?
+####Applikationer / perspektivering
+Udvikling af forlystelser - er de der opleves "vildest" også der hovr kroppen påvirkes kraftigst? Hvilke tricks anvendes for at få en forlystelse til at virke vildere?
+
+----------
+###Radondøtre i husholdningen
+####Idegrundlag
+Radon siver op fra undergrunden og henfalder til mange andre kerner med forskellige aktiviteter. Disse binder sig undertiden til almindeligt støv og andre overflader i husholdningen. Kan man måle aktiviteten og henfaldet af disse radondøtre i eksempelvis "fnuller" fra tørretumbleren, indholdet af støvsugerposen eller andre almindelige kilder?
+Er der forskel på forskellige rum/niveauer i et hus? Nye huse og gamle huse? Er det muligt ud fra henfaldet/halveringstiden at påvise forskellige isotoper i blandingen?
+####Teknologier
+Geigertæller
+####Fagforslag
+####Applikationer / perspektivering
+
+-------------
+###Speciel relativitet 
+####Idegrundlag
+* Udledning af en eller flere fysiske effekter: Lorenz-transformation, tidforlængelse og længdeforkortelse. Relativistisk Doppler effekt og optik. 
+* Behandling af tilsyneladende paradoxer som "ladder paradox" eller tvillinge paradoxet. Formidling af relatvitetsteorien. Udledning af magnetisme ud fra relativistisk forskydning af ladninger.
+* Arbejde med relativistisk optik (dobbler effekt) på data som andre har opsamlet.
+####Teknologier
+####Fagforslag
+####Applikationer / perspektivering
+Fejlkompensation på GPS sattelitter. Astronomiske oberservationer - direkte og indirekte - "gravitational lensing".
+
+-------------
+###Kvantemekanik
+####Idegrundlag
+* Løs Schrödingers ligning for bølgefunktionen for en partikel i infinite well eller finite well problemet.
+* Redegør for koncepter som bølgefunktioner (herunder Borns statistiske fortolkning, realistisk/agnostisk/ortodoks fortolkning og bølgefunktionens kollaps), Plancks konstant, forventningsværdier og udledning af tidsuafhængige Schrödinger ligning 
+* Redegør for nogle af de konsekvenser som kvantemekanik har for resten af fysikken: diskret energi, kvantetunnelering, Heisenbergs ubestemmeligheds princip og Newtons deterministiske mekanik, hvordan tunnelling tillader stjerner at brænde, tunnelling i transistorer.
+####Teknologier
+####Fagforslag
+Filosofi: Hvad betyder ubestemmelighedsprincippet, bølgefunktioner, kollapset af den deterministiske mekanik, eller muligheden for at eksistere flere steder samtidigt betyder for vores eksistens eller virkelighedsopfattelse?
+####Applikationer / perspektivering
+
+------------
+###Tyngdekraft
+####Idegrundlag
+Udled formlen for tyngdekraften ud fra viden om cirkelbevægelse
+og observationer af planeternes omløbstider og bane parametre.
+Newton 2. lov kan kombineres med en potens funktion der
+beskriver sammenhængen mellem planeternes baneradier og deres
+omløbstider. Sammen med formler for cirkelbevægelse kan man udlede
+afstandsafhængigheden af massetiltrækningen.
+####Teknologier
+####Fagforslag
+####Applikationer / perspektivering
+
+------------
 ##Teknologi
 * Byg selv dit måleapparat! Fluorescens, mobilspektrofotometri,
 arduino, temperatur, etc etc...
+
+------------
+#Template:
+##Fag
+###Emne
+####Idegrundlag
+####Teknologier
+####Fagforslag
+####Applikationer / perspektivering
